@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+            * {
+                box-sizing: border-box;
+            }
+            .box {
+                width: 100px;
+                height: 100px;
+                display: block;
+            }
+            .box1 {
+                background-color: red;
+                display: inline-block;
+            }
+            .box2 {
+                background-color: darkblue;
+                display: inline-block;
+            }
+            .box3 {
+                background-color: darkgoldenrod;
+            }
+            .box4 {
+                background-color: darkgreen;
+                display: none;
+            }
+            .box5 {
+                background-color:hotpink;
+                display: inline;
+            }
+            .box6 {
+                background-color: aliceblue;
+                padding: 10px 5px 15px 20px;
+                border: 2px solid black;
+                border-width: 1px 2px 3px 4px;
+            }
+            .navigation {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            .navigation li{
+                display: inline-block;
+            }
+            .navigation li a {
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                margin-right: 10px;
+            }
+
+    /* pseudo-class */
+
+            .navigation li a:hover {
+                text-decoration: underline;
+                color: red;
+             }
+            .box7 {
+                border: 1px solid black;
+                padding: 20px;
+            }
+            .box7:hover p {
+                color:brown;
+
+            }
+            .parent li:first-child {
+                color: fuchsia;
+                font-size: 25px;
+            }
+            .parent li:nth-child(2) {
+                color: blue;
+                font-size: 21px;
+            }
+            .parent li:nth-child(3) {
+                color: rgb(2, 81, 128);
+                font-size: 18px;
+            }
+            .parent li:nth-child(4) {
+                color: rgb(235, 89, 5);
+                font-size: 15px;
+            }
+            .parent li:last-child {
+                color: rgb(66, 15, 0);
+                font-size: 12px;
+            }
+
+            /* If you want to appear even or odd or (2n) (3n) etc. */
+            .parent li:nth-child(even) {
+                color: teal;
+                font-size: 40px;
+            }
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+            <h1>CSS Display Properties</h1>
+                <div class="box box1"></div>
+                <div class="box box2"></div>
+                <div class="box box3"></div>
+                <div class="box box4"></div>
+                <div class="box box5">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                <div class="box6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, veritatis?</div>
+
+        <div>
+            <ul class="navigation">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="box7">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptate.
+            </p>
+        </div>
+
+        <ul class="parent">
+            <li>1st child</li>
+            <li>2nd child</li>
+            <li>3rd child</li>
+            <li>4th child</li>
+            <li>5th child</li>
+        </ul>
+
+
+
+
+
+
+</body>
+</html>
